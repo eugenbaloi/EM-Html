@@ -44,7 +44,79 @@ Aplica line-height de 23 pe paragrafele documentului
 
 }
 
-body
+@font-face {
+  font-family: 'julius_sans_oneregular';
+  src: url('juliussansone-regular-webfont.woff2') format('woff2'),
+       url('juliussansone-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+/*Coloreaza elementele h1 rosu, aplica fontul Julius pe ele si seteaza-le o marime de 35px*/
+
+h1 {
+  color:red;
+  font-family: 'julius_sans_oneregular';
+  font-size: 35px;
+}
+
+
+  /*Aplica fontul Roboto Bold pe elemente b din paragrafe */
+
+p b {
+
+  font-family: 'robotobold'; 
+}
+
+  /* Aplica fontul Roboto Regular pe elementul body astfel incat tot textul documentului sa foloseasca acest font   */
+
+body {
+  font-family:'robotoregular';
+}
+
+/* Aplica fontul Roboto Italic pe elementele i, coloreaza-le albastru si subliniaza-le  */
+
+ul i{
+color: blue;
+font-family: 'robotoitalic';
+text-decoration: underline;
+}
+
+/* Aplica fontul Roboto Bold pe ancorele aflate in liste ordonate  */
+
+ol, a {
+  font-family: 'robotobold'; 
+}
+
+/*Aplica fontul Julius pe elementele li ale listelor neordonate si seteaza-le line-height de 25 */
+
+ul, li{
+  line-height: 25px;
+}
+
+/* Aplica fontul Roboto Bold elemente h3, coloreaza-le verde si seteaza-le o marime de 28px  */
+
+h3 {
+  font-family: 'robotobold'; 
+  color:green;
+  font-size: 28px;
+}
+
+/* Aplica fontul Julius pe elementele h2, coloreaza-le mov, subliniaza-le si seteaza-le o marime de 32px */
+
+h2
 {
-  font-family:'robotobold';
+  font-family: 'julius_sans_oneregular';
+  color: purple;
+  text-decoration: underline;
+  font-size: 32px;
+}
+
+/* Aplica line-height de 23 pe paragrafele documentului */
+
+p {
+  line-height: 23px;
 }
