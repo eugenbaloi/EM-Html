@@ -23,3 +23,26 @@
 .box-yellow {
   background-color: yellow;
 }
+
+
+/* Tranzitioneaza lungimea cutiei rosii de la valoarea initiala la 120px pentru trei secunde */
+
+.box-red:hover {
+  width:120px;
+}
+
+/* Roteste cutia verde 360 de grade si creste-i dimensiunile cu 5px pentru 5 secunde
+ */
+ .box-green:hover {
+  transform: rotate(180deg) scale(1.2);
+ }
+
+/* Tranzitioneaza lungimea si latimea cutiei mov pana la 100px peste 4 secunde cu functia ease si un delay de o secunda 
+ */
+
+ .box-purple:hover {
+  transition: margin-right 4s ease-in-out 1s;
+ }
+ 
+/*  */
+/*  */

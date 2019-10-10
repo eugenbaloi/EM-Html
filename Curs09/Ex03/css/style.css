@@ -6,6 +6,22 @@
 }
 
 .float-left {
-  float: left;
+  float: right;
 }
 
+/* Aplica proprietatea float: left/right pe clasele dedicate din codul documentului din director astfel incat fiecare imagine sa fie trasa in partea corecta. 
+ */
+
+ .card .float-left{
+   float: right;
+ }
+
+ .card .float-right{
+  float: center;
+}
+
+/* Pentru ultimul card, creaza un selector care sa aplice float: none pe imaginea pisicii, astfel incat imaginea sa se intoarca in flowul normal. */
+
+.card .float-left{
+  float: right;
+}
